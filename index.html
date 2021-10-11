@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+    <title>Experiment</title>
+    <link rel = 'stylesheet' href = 'style.css'>
+</head>
+<body>
+    <!--Instructions-->
+    <div class = 'text_box' id = 'instruc_box'>
+        <div class = 'instruc' >Are you human?</div>
+        <label><div class = 'selection'><input class = 'radio' type = 'radio' name = 'human' value = '1'><p class = 'selection_text'>Yes</p></div></label>
+        <label><div class = 'selection'><input class = 'radio' type = 'radio' name = 'human' value = '0'><p class = 'selection_text'>No</p></div></label>
+        <button class = 'button' id = 'instruc_button' onclick = 'submit_instruc()'>SUBMIT</button>
+        <div class = 'warning' id = 'instruc_warning'></div>
+    </div>
+
+    <div id = 'warning_box'></div>
+
+    <!--Task-->
+    <div class = 'text_box' id = 'expt1'>
+        <div class = 'instruc' >How would you rate your liking of this image?</div>
+        <div class = 'img_box'><img src = 'images/block.jpg' alt = 'gene'></div>
+        </div>
+        <div class = 'rating_area' id = 'expt_select_1'>
+            <label><div class = 'selection'><input class = 'radio' type = 'radio' name = 'block' value = '1'><p class = 'selection_text'>Strongly Dislike</p></div></label>
+            <label><div class = 'selection'><input class = 'radio' type = 'radio' name = 'block' value = '2'><p class = 'selection_text'>Somewhat Dislike</p></div></label>
+            <label><div class = 'selection'><input class = 'radio' type = 'radio' name = 'block' value = '3'><p class = 'selection_text'>Neutral</p></div></label>
+            <label><div class = 'selection'><input class = 'radio' type = 'radio' name = 'block' value = '4'><p class = 'selection_text'>Somewhat Like</p></div></label>
+            <label><div class = 'selection'><input class = 'radio' type = 'radio' name = 'block' value = '5'><p class = 'selection_text'>Strongly Like</p></div></label>
+            <button class = 'button' onclick = 'submit_expt()'>SUBMIT</button>
+        </div>
+    </div>
+
+    <div class = 'text_box' id = 'expt2'>
+        <div class = 'instruc' >How would you rate your liking of this image?</div>
+        <div class = 'img_box'><img src = 'images/bear.jpg' alt = 'bear'></div>
+        </div>
+        <div class = 'rating_area' id = 'expt_select_2'>
+            <label><div class = 'selection'><input class = 'radio' type = 'radio' name = 'bear' value = '1'><p class = 'selection_text'>Strongly Dislike</p></div></label>
+            <label><div class = 'selection'><input class = 'radio' type = 'radio' name = 'bear' value = '2'><p class = 'selection_text'>Somewhat Dislike</p></div></label>
+            <label><div class = 'selection'><input class = 'radio' type = 'radio' name = 'bear' value = '3'><p class = 'selection_text'>Neutral</p></div></label>
+            <label><div class = 'selection'><input class = 'radio' type = 'radio' name = 'bear' value = '4'><p class = 'selection_text'>Somewhat Like</p></div></label>
+            <label><div class = 'selection'><input class = 'radio' type = 'radio' name = 'bear' value = '5'><p class = 'selection_text'>Strongly Like</p></div></label>
+            <button class = 'button' onclick = 'submit_expt()'>SUBMIT</button>
+        </div>
+    </div>
+
+    <div class = 'text_box' id = 'expt3'>
+        <div class = 'instruc' >How would you rate your liking of this image?</div>
+        <div class = 'img_box'><img src = 'images/royce.jpg' alt = 'royce'></div>
+        </div>
+        <div class = 'rating_area' id = 'expt_select_3'>
+            <label><div class = 'selection'><input class = 'radio' type = 'radio' name = 'royce' value = '1'><p class = 'selection_text'>Strongly Dislike</p></div></label>
+            <label><div class = 'selection'><input class = 'radio' type = 'radio' name = 'royce' value = '2'><p class = 'selection_text'>Somewhat Dislike</p></div></label>
+            <label><div class = 'selection'><input class = 'radio' type = 'radio' name = 'royce' value = '3'><p class = 'selection_text'>Neutral</p></div></label>
+            <label><div class = 'selection'><input class = 'radio' type = 'radio' name = 'royce' value = '4'><p class = 'selection_text'>Somewhat Like</p></div></label>
+            <label><div class = 'selection'><input class = 'radio' type = 'radio' name = 'royce' value = '5'><p class = 'selection_text'>Strongly Like</p></div></label>
+            <button class = 'button' onclick = 'submit_expt()'>SUBMIT</button>
+        </div>
+    </div>
+
+    <div id = 'notif_box'></div>
+    
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src = 'main.js'></script>
+</body>
+</html>
